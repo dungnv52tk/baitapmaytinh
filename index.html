@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<form>
+    <input type="text" id="firstnum">
+    <input type="text" id="secondnum"><br><br>
+    <button type="button" onclick="addition()">Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="multiplication()">Multiplication(X)</button>
+    <button type="button" onclick="division()">Division(/)</button>
+</form>
+<p id="kq"></p>
+<script>
+    function addition() {
+            var a = parseInt(document.getElementById('firstnum').value);
+            var b = parseInt(document.getElementById('secondnum').value);
+            c = a + b;
+            document.getElementById('kq').innerHTML = c;
+    }
+
+    function subtraction() {
+        var a = parseInt(document.getElementById('firstnum').value);
+        var b = parseInt(document.getElementById('secondnum').value);
+        c = a - b;
+        document.getElementById('kq').innerHTML = c;
+
+    }
+    function multiplication(){
+        var a = parseInt(document.getElementById('firstnum').value);
+        var b = parseInt(document.getElementById('secondnum').value);
+        c = a * b;
+        document.getElementById('kq').innerHTML = c;
+    }
+    function division(){
+        var a = parseInt(document.getElementById('firstnum').value);
+        var b = parseInt(document.getElementById('secondnum').value);
+        c = a / b;
+        document.getElementById('kq').innerHTML = c;
+    }
+</script>
+</body>
+</html>
